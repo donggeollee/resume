@@ -1,12 +1,12 @@
 import React  from 'react';
 import ReactMarkDown from 'react-markdown';
 import htmlParser from 'react-markdown/plugins/html-parser';
-import BlockQuoteBlock from './BlockQuoteBlock';
-import CodeBlock from './CodeBlock';
+import BlockQuoteBlock from './markdown_utils/BlockQuoteBlock';
+import CodeBlock from './markdown_utils/CodeBlock';
 import podoSource from './company_history/podo';
 import travelaiSource from './company_history/travelai';
-import InlineCodeBlock from './InlineCodeBlock';
-import TableCellBlock from './TableCellBlock';
+import InlineCodeBlock from './markdown_utils/InlineCodeBlock';
+import TableCellBlock from './markdown_utils/TableCellBlock';
 
 export const highlight = (string) => {
     return `<em><strong>${string}</strong></em>`
